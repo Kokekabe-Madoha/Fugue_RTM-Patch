@@ -174,5 +174,5 @@ public class ModPatchConfig {
     @Config.Name("Enable KubeJS Patch")
     public boolean enableKubeJS = true;
     @Config.Name("Enable NGTLib Patch")
-    public boolean enableNGTLib = true
+    public boolean enableNGTLib = true;
 }
