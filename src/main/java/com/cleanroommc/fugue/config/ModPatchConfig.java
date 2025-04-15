@@ -173,4 +173,6 @@ public class ModPatchConfig {
     public boolean enableFarseek = true;
     @Config.Name("Enable KubeJS Patch")
     public boolean enableKubeJS = true;
+    @Config.Name("Enable NGTLib Patch")
+    public boolean enableNGTLib = true
 }
