@@ -541,6 +541,14 @@ public class TransformerHelper {
                     "dev.latvian.kubejs.util.nbt.NBTBaseJS",
                     "dev.latvian.kubejs.util.UtilsJS"
             );
+        if (FugueConfig.modPatchConfig.enableNGTLib) {
+            TransformerDelegate.registerExplicitTransformer(
+                    new RemapTransformer(
+                            new String[] { "jdk/nashorn/" },
+                            new String[] { "org/openjdk/nashorn/api/scripting/" }
+                    ),
+                    "jp.ngt.ngt.ib.io.ScriptUtil",
+            );
             TransformerDelegate.registerExplicitTransformer(
                     new KubeJSTransformer(),
                     "dev.latvian.kubejs.KubeJS"
