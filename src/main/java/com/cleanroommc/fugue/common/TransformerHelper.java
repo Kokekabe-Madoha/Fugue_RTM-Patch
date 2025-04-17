@@ -552,7 +552,7 @@ public class TransformerHelper {
                             new String[] { "jdk/nashorn/" },
                             new String[] { "org/openjdk/nashorn/api/scripting/" }
                     ),
-                    "jp.ngt.ngt.ib.io.ScriptUtil",
+                    "jp.ngt.ngt.ib.io.ScriptUtil"
             );
         }
 
