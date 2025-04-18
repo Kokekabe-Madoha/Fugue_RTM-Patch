@@ -566,8 +566,9 @@ public class TransformerHelper {
                                     "jakarta/soap/",
                                     "jakarta/jws/"
                             }
-                    "jp.ngt.ngtlib.io.ScriptUtil"
                     ),
+                    "jp.ngt.ngtlib.io.ScriptUtil"
+                    );
             TransformerDelegate.registerExplicitTransformer(
                     new NGTLibTransformer(),
                     "jp.ngt.ngtlib.io.ScriptUtil"
