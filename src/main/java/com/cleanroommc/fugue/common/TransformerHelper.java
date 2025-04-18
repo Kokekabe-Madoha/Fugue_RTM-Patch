@@ -45,7 +45,7 @@ import com.cleanroommc.fugue.transformer.loliasm.LoliReflectorTransformer;
 import com.cleanroommc.fugue.transformer.loliasm.ModIdentifierTransformer;
 import com.cleanroommc.fugue.transformer.moresoundconfig.SoundDevicesTransformer;
 import com.cleanroommc.fugue.transformer.nbtperipheral.LinkedTreeMapTransformer;
-import com.cleanroommc.fugue.transformer.ngtlib.NGTLIbTransformer;
+import com.cleanroommc.fugue.transformer.ngtlib.NGTLibTransformer;
 import com.cleanroommc.fugue.transformer.nothirium.BufferBuilderTransformer;
 import com.cleanroommc.fugue.transformer.nothirium.FreeSectorManagerTransformer;
 import com.cleanroommc.fugue.transformer.nothirium.MixinBufferBuilderTransformer;
