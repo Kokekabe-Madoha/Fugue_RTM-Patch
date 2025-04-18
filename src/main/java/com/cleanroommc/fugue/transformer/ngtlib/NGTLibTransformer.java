@@ -5,7 +5,7 @@ import org.objectweb.asm.ClassWriter;
 import org.objectweb.asm.tree.*;
 import top.outlands.foundation.IExplicitTransformer;
 
-public class fixrtmTransformer implements IExplicitTransformer {
+public class NGTLibTransformer implements IExplicitTransformer {
     @Override
     public byte[] transform(byte[] bytes) {
         ClassNode classNode = new ClassNode();
