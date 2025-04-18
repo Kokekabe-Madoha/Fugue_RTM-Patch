@@ -549,6 +549,12 @@ public class TransformerHelper {
         }
         if (FugueConfig.modPatchConfig.enableNGTLib) {
             TransformerDelegate.registerExplicitTransformer(
+                    new RemapTransformer(
+                            new String[] { "jdk/nashorn/" },
+                            new String[] { "org/openjdk/nashorn/" }
+                    "jp.ngt.ngtlib.io.ScriptUtil"
+                    ),
+            TransformerDelegate.registerExplicitTransformer(
                     new NGTLibTransformer(),
                     "jp.ngt.ngtlib.io.ScriptUtil"
             );
