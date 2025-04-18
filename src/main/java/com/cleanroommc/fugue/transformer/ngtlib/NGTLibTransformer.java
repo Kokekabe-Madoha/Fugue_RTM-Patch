@@ -24,7 +24,7 @@ public class NGTLibTransformer implements IExplicitTransformer {
                         {
                             if (insnNode instanceof LdcInsnNode ldcInsnNode)
                             {
-                                if (ldcInsnNode.cst.equals("jdk.nashorne"))
+                                if (ldcInsnNode.cst.equals("jdk.nashorn"))
                                 {
                                     ldcInsnNode.cst = "org.openjdk.nashorn";
                                 }
