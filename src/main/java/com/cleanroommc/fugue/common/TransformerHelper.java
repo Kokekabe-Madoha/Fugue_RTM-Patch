@@ -550,8 +550,22 @@ public class TransformerHelper {
         if (FugueConfig.modPatchConfig.enableNGTLib) {
             TransformerDelegate.registerExplicitTransformer(
                     new RemapTransformer(
-                            new String[] { "jdk/nashorn/" },
-                            new String[] { "org/openjdk/nashorn/" }
+                            new String[] {
+                                    "javax/xml/bind/",
+                                    "javax/xml/ws/",
+                                    "javax/ws/",
+                                    "javax/activation/",
+                                    "javax/soap/",
+                                    "javax/jws/"
+                            },
+                            new String[] {
+                                    "jakarta/xml/bind/",
+                                    "jakarta/xml/ws/",
+                                    "jakarta/ws/",
+                                    "jakarta/activation/",
+                                    "jakarta/soap/",
+                                    "jakarta/jws/"
+                            }
                     "jp.ngt.ngtlib.io.ScriptUtil"
                     ),
             TransformerDelegate.registerExplicitTransformer(
